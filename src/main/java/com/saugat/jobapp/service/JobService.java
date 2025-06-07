@@ -20,4 +20,16 @@ public class JobService {
     public List<JobPost> getAllJobs(){
         return repository.getAllJobs();
     }
+
+    public JobPost getJob(int jobId){
+        return repository.getJob(jobId);
+    }
+
+    public void updateJob(JobPost jobPost){
+        repository.updateJob(jobPost);
+    }
+
+    public void deleteJob(int jobId){
+        repository.deleteJob(jobId);
+    }
 }
