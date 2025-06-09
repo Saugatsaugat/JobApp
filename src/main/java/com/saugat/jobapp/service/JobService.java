@@ -45,4 +45,8 @@ public class JobService {
            repository.saveAll(jobs);
            System.out.println("Data loaded successfully");
     }
+
+    public List<JobPost> searchJob(String keyword) {
+        return repository.findByPostDescContainingIgnoreCaseOrPostProfileContaining(keyword, keyword);
+    }
 }
