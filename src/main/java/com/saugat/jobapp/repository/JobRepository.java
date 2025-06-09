@@ -3,11 +3,9 @@ package com.saugat.jobapp.repository;
 import com.saugat.jobapp.model.JobPost;
 import org.springframework.stereotype.Repository;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public class JobRepository {
